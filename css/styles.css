@@ -1,0 +1,64 @@
+/****************************************************************
+ *
+ * RESET
+ *
+ ***************************************************************/
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	background: transparent;
+	text-decoration: none;
+}
+html, body {
+	min-height: 100%;
+}
+body {
+	min-height: 100vh;
+	font-size: 16px;
+	background: #fff;
+	color: #222;
+	font-family: 'Roboto', 'Arial', sans-serif;
+}
+ul, li, ol {
+	list-style: none;
+}
+img {
+	display: block;
+}
+a {
+	color: #222;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+input:focus {
+	outline: none;
+}
+
+body > header {
+	background: #aaa;
+}
+body > main {
+	flex: auto;
+	height: 100%;
+	background: #ccc;
+}
+body > footer {
+	background: #f2f2f2;
+}
+
+
+
+/****************************************************************
+ *
+ * GENERAL CLASSES
+ *
+ ***************************************************************/
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;p
+}
