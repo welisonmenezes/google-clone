@@ -90,6 +90,23 @@ body > footer {
 	align-items: center;
 	position: relative;
 }
+.top-opts .dropdown {
+	position: static;
+}
+.top-opts .dropdown-content {
+	top: 45px;
+	width: 340px;
+	z-index: 99;
+}
+.top-opts .dropdown-content > div {
+	padding: 24px 10px;
+}
+.top-opts .dropdown-content.user > div {
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+
+
 .top-opts-item {
 	margin-left: 18px;
 }
@@ -108,4 +125,33 @@ body > footer {
 .top-opts-item > .fig-menu:hover,
 .top-opts-item:focus > .fig-menu {
 	opacity: 100;
+}
+
+
+
+/****************************************************************
+ *
+ * DINAMIC ELEMENTS
+ *
+ ***************************************************************/
+.dropdown {
+	position: relative;
+}
+.dropdown-content {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	height: 468px;
+	background: #fff;
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    border-radius: 8px;
+	max-height: calc(100vh - 80px);
+	overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+}
+.dropdown.open .dropdown-content {
+	display: block;
 }
