@@ -39,12 +39,11 @@ input:focus {
 }
 
 body > header {
-	background: #aaa;
+	padding: 15px 30px 0 30px;
 }
 body > main {
 	flex: auto;
 	height: 100%;
-	background: #ccc;
 }
 body > footer {
 	background: #f2f2f2;
@@ -61,4 +60,52 @@ body > footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;p
+}
+
+.rounded {
+	border-radius: 50%;
+}
+
+
+
+
+/****************************************************************
+ *
+ * ELEMENTS
+ *
+ ***************************************************************/
+.fig-menu {
+	width: 16px;
+	height: 16px;
+}
+
+.fig-avatar {
+	width: 33px;
+	height: 33px;
+}
+
+.top-opts {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.top-opts-item {
+	margin-left: 18px;
+}
+.top-opts-item > a {
+	font-size: 13px;
+}
+.top-opts-item > a:hover {
+	opacity: .85;
+}
+.top-opts-item > img {
+	cursor: pointer;
+}
+.top-opts-item > .fig-menu {
+	opacity: .55;
+}
+.top-opts-item > .fig-menu:hover,
+.top-opts-item:focus > .fig-menu {
+	opacity: 100;
 }
